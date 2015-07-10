@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{0E7BE5C8-5A56-4D0B-AC22-7BA15C1FBE4B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>recommender</RootNamespace>
+    <AssemblyName>recommender</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Enumeration\AggregationType.cs" />
+    <Compile Include="Enumeration\CorrelationType.cs" />
+    <Compile Include="CollaborativeFiltering\ItemKNN.cs" />
+    <Compile Include="CollaborativeFiltering\UserKNN.cs" />
+    <Compile Include="DataStrucuture\CorrelationMatrix.cs" />
+    <Compile Include="DataStrucuture\RatingData.cs" />
+    <Compile Include="CollaborativeFiltering\KNN.cs" />
+    <Compile Include="Interfaces\IRecommender.cs" />
+    <Compile Include="DataStrucuture\BooleanMatrix.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Enumeration\" />
+    <Folder Include="CollaborativeFiltering\" />
+    <Folder Include="DataStrucuture\" />
+  </ItemGroup>
+</Project>

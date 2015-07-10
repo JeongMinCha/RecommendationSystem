@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="recommender/recommender.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="recommender/Program.cs">
+    <Files>
+      <File FileName="../../../Dropbox/2015-1/데이터마이닝/과제 제출/assignment#4/recommender/recommender/Program.cs" Line="39" Column="23" />
+      <File FileName="recommender/CollaborativeFiltering/ItemKNN.cs" Line="14" Column="3" />
+      <File FileName="recommender/CollaborativeFiltering/UserKNN.cs" Line="1" Column="1" />
+      <File FileName="recommender/CollaborativeFiltering/KNN.cs" Line="1" Column="1" />
+      <File FileName="recommender/Enumeration/AggregationType.cs" Line="1" Column="1" />
+      <File FileName="recommender/Enumeration/CorrelationType.cs" Line="1" Column="1" />
+      <File FileName="recommender/Program.cs" Line="46" Column="7" />
+      <File FileName="recommender/DataStrucuture/BooleanMatrix.cs" Line="1" Column="1" />
+      <File FileName="recommender/Interfaces/IRecommender.cs" Line="9" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
